@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color:#fefefe;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 200px;
+    z-index: 999;
+}
+.logo{
+    font-size: 1.9em;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #3a3ca7;
+    text-shadow: 0 2px #000016;
+}
+.navbar{
+    text-transform: capitalize;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #3a3ca7;
+    display: inline-block;
+    padding:0 10px;
+}
+.navbar a:hover{
+    color: blueviolet;
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.main div h2{
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.main div h2 span{
+    color: rgb(237, 48, 48);
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+.main div h3{
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.btn{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: white;
+    display: inline-block;
+    background-color:#3a3ca7 ;
+    padding: 0.9384em 2.0447em;
+    border-radius: 25px;
+    transition: 0.7s ease;
+}
+.btn:hover{
+    background-color: #3538fe;
+    transform:scale(1.1);
+}
+.social a{
+    color: #fff;
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 1.7em;
+    font-weight: 500;
+    padding-right: 30px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #3a6cf4;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px ;
+    text-transform: capitalize;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    color: #3a6cf4;
+    font-size: 8em;
+    font-weight: 700;
+    text-align: center;
+}
+.info{
+    text-align: center;
+    text-transform: capitalize;
+}
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 800;
+    margin: 10px;
+}
+.projects{
+    background-color: #000016;
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project-card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    min-height: 14em;
+    width: 23em;
+    margin: 20px;
+    overflow: hidden;
+    transition: 0.7s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-image img{
+    width: 100%;
+    transition: 0.7s ease;
+}
+.project-image img:hover{
+    opacity: 0.9;
+}
+.project-info{
+    padding: 1em;
+}
+.project-category{
+    text-transform: capitalize;
+    color: #000;
+    font-size: 0.8em;
+}
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 800;
+    margin-top: 10px;
+}
+.more-details{
+    text-decoration: none;
+    color: #3a6cf4;
+}
+.more-details:hover{
+    color: #3a3ca7;
+}
+.contact-cards .card .icon{
+    font-size: 4.5em;
+}
+.contact-cards .card .info h3{
+    color: #000;
+    font-weight: 900;
+}
+.footer{
+    background-color: #000016;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 800;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer span{
+    color: #3a6cf4;
+}
+.footer .social a{
+    font-size: 1.7em;
+    color: #fff;
+    padding-right: 15px ;
+}
+@media (max-width:1024px){
+    header{
+        width: 100%;
+        padding: 25px 5px;
+    }
+    .logo{
+        font-size: 1.2em;
+    }
+    .navbar a{
+        font-size: 0.750em;
+    }
+    .main{
+        padding: 100px 15px;
+    }
+    .main div h2{
+        font-size:1.1em ;
+    }
+    .main div h3{
+        font-size: 1em;
+        margin-top: 35px;
+    }
+    .main div h2 span{
+        font-size: 1.7em;
+        margin-top: 35px;
+    }
+    .btn{
+        font-size: 1em;
+        margin-top: 35px;
+    }
+    .social a{
+        font-size: 1.4em;
+        padding-right: 20px;
+    }
+    .cards{
+        padding: 10px 20px;
+    }
+    .projects{
+        padding: 80px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-cards{
+        padding: 80px 20px;
+    }
+
+    .title{
+        font-size: 2em;
+    }
+    .icon{
+        font-size: 7em;
+    }
+    .footer{
+        padding: 30px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-title{
+        font-size: 0.9em;
+    }
+    .footer .social a{
+        font-size: 1.2em;
+    }
+}
